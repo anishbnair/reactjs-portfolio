@@ -1,18 +1,18 @@
 import React from 'react'
-import avatar from '../img/avatar.png'
-import {NavLink} from 'react-router-dom'
+import avatar from '../img/avatar.png';
+import {NavLink} from 'react-router-dom';
 
 function Navbar() {
     return (
         <div className="NavBar">
-
             <nav className="nav">
                 <div className="profile">
                     <img src={avatar} alt=""/>
-                </div>
+                 </div>
+
                 <ul className="nav-items">
                     <li className="nav-item">
-                        <NavLink to="/home" exact activeClassName="active">
+                        <NavLink to="/" exact activeClassName="active">
                             Home
                         </NavLink>
                     </li>
@@ -37,17 +37,16 @@ function Navbar() {
                         </NavLink>
                     </li>
                 </ul>
+
                 <footer className="footer">
                     <p>
                         @2021 Lorem Ipsum
                     </p>
-
-                </footer>
+            </footer>
             </nav>
-
+            
         </div>
     )
 }
 
-export default Navbar
-
+export default Navbar;
